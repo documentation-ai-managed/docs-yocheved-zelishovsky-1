@@ -1,0 +1,121 @@
+---
+title: Introduction to Runway Social Studio
+description: Discover Runway Social Studio, a comprehensive social media management platform designed for multifamily properties to build and maintain engaging online communities.
+---
+
+## Overview
+
+Runway Social Studio empowers property managers and owners to elevate their multifamily communities' online presence. You create compelling content, schedule posts across platforms, and analyze engagement metrics all in one intuitive dashboard. Specializing in multifamily properties, the platform helps you showcase amenities, share resident stories, and foster community interaction effortlessly.
+
+<Callout kind="info">
+Runway Social Studio integrates with major platforms like Instagram, Facebook, and TikTok, tailored for real estate professionals.
+</Callout>
+
+## Key Benefits
+
+You save time while boosting resident satisfaction and property appeal. Here are the top advantages:
+
+<Columns cols={3}>
+  <Card title="Increased Engagement" icon="heart" href="#features">
+    Drive more interactions with targeted content that resonates with residents.
+  </Card>
+  <Card title="Time Savings" icon="clock" href="#features">
+    Automate scheduling and posting across multiple social channels.
+  </Card>
+  <Card title="Data-Driven Insights" icon="bar-chart-3" href="#features">
+    Track performance with analytics to refine your strategy.
+  </Card>
+</Columns>
+
+## Core Features
+
+Explore the essential tools that make Runway Social Studio indispensable:
+
+<Tabs>
+  <Tab title="Content Creation" icon="edit-3">
+    Design eye-catching posts with built-in templates for property tours, events, and testimonials. Drag-and-drop editor simplifies customization.
+  </Tab>
+  <Tab title="Scheduling & Automation" icon="calendar">
+    Plan your content calendar weeks ahead. Auto-post to Instagram, Facebook, LinkedIn, and more at optimal times.
+  </Tab>
+  <Tab title="Analytics Dashboard" icon="activity">
+    Monitor likes, shares, and comments. Identify top-performing content to replicate success.
+  </Tab>
+</Tabs>
+
+## Quick Start
+
+Get up and running in minutes:
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Create your free account at `https://dashboard.example.com/signup`.
+  </Step>
+  <Step title="Connect Properties" icon="building">
+    Add your multifamily communities and link social accounts.
+  </Step>
+  <Step title="Create First Post" icon="plus">
+    
+````javascript
+// Sample API call to create a post
+const response = await fetch('https://api.example.com/v1/posts', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    propertyId: 'prop_123',
+    platforms: ['instagram', 'facebook'],
+    content: 'Discover our new amenities! #MultifamilyLiving',
+    scheduleDate: '2024-10-20T10:00:00Z'
+  })
+});
+````
+
+  </Step>
+  <Step title="Monitor Results" icon="eye">
+    View engagement in your dashboard.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,Python">
+```javascript
+// Embed widget on your property website
+const script = document.createElement('script');
+script.src = 'https://dashboard.example.com/widget.js';
+script.setAttribute('data-property-id', 'prop_123');
+document.head.appendChild(script);
+```
+
+```python
+# Python integration example
+import requests
+
+response = requests.post(
+    'https://api.example.com/v1/posts',
+    headers={'Authorization': 'Bearer YOUR_API_KEY'},
+    json={
+        'propertyId': 'prop_123',
+        'content': 'Welcome to our community!'
+    }
+)
+```
+</CodeGroup>
+
+## Next Steps
+
+Ready to dive deeper?
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="zap" href="/quickstart">
+    Set up your first campaign step-by-step.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Securely manage API access and integrations.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+Start with one property to familiarize yourself, then scale across your portfolio. Contact support at `support@example.com` for personalized onboarding.
+</Callout>
